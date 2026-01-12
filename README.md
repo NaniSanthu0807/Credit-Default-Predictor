@@ -1,4 +1,4 @@
-# Credit Card Default Prediction [MODEL_LINK](https://credit-default-predictor-ka8p4ujehawreaqlwu8eom.streamlit.app/)
+# Credit Card Default Prediction **[MODEL_LINK](https://credit-default-predictor-ka8p4ujehawreaqlwu8eom.streamlit.app/)**
 
 A machine learning project to predict **credit card default risk** using demographic information, credit data, and historical payment behavior.
 
