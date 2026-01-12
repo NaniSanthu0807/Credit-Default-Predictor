@@ -3,7 +3,7 @@
 A machine learning project to predict **credit card default risk** using demographic information, credit data, and historical payment behavior.
 
 ## 🌐 Website
-- [link](https://credit-default-predictor-ka8p4ujehawreaqlwu8eom.streamlit.app/)
+- [visit_model](https://credit-default-predictor-ka8p4ujehawreaqlwu8eom.streamlit.app/)
 
 
 ## Overview
