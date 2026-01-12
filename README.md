@@ -1,7 +1,8 @@
-# Credit Card Default Prediction
-
+# Credit Card Default Prediction [MODEL_LINK](https://credit-default-predictor-ka8p4ujehawreaqlwu8eom.streamlit.app/)
 
 A machine learning project to predict **credit card default risk** using demographic information, credit data, and historical payment behavior.
+
+## Overview
 
 **Credit card default prediction** is a critical task in the financial sector, as it helps banks and financial institutions minimize credit risk and make informed lending decisions. This project focuses on building a machine learning model to predict whether a credit card client will default on their payment in the following month.
 
@@ -9,9 +10,8 @@ The dataset used in this project contains detailed information on credit card cl
 
 ---
 
-## 📊 Dataset Information
+##  Dataset Information
 - **Source:** [DATASET](https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset/data)
-
 - **Time Period:** April 2005 – September 2005
 - **Total Records:** 30,000
 - **Total Features:** 25
@@ -28,14 +28,14 @@ The dataset used in this project contains detailed information on credit card cl
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 Financial institutions face significant losses due to credit card defaults, making it essential to accurately predict customers who are likely to fail in meeting their payment obligations. Traditional risk assessment methods often struggle to capture complex relationships between customer demographics, repayment behavior, and financial history.
 
 The objective of this project is to build a machine learning model that predicts whether a credit card customer will default on their payment in the next month, using historical payment behavior, billing information, and demographic data.
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 - **Language:** Python
 - **Libraries:**
   - NumPy
@@ -46,7 +46,7 @@ The objective of this project is to build a machine learning model that predicts
 
 ---
 
-## 🧠 Methodology
+##  Methodology
 1. Data loading and preprocessing
 2. Exploratory Data Analysis (EDA)
 3. Feature selection
@@ -56,7 +56,7 @@ The objective of this project is to build a machine learning model that predicts
 
 ---
 
-## 🤖 Models Evaluated
+##  Models Evaluated
 
 Multiple algorithms were implemented and compared.
 
@@ -69,62 +69,45 @@ Multiple algorithms were implemented and compared.
 
 ---
 
-## 🔧 Hyperparameter Tuning (Decision Tree)
+##  Hyperparameter Tuning (Decision Tree)
 Hyperparameter tuning was applied to improve generalization and reduce overfitting.
 
 **Parameters tuned:**
-- `max_depth`
-- `min_samples_split`
-- `min_samples_leaf`
-- `class_weight`
+- `criterion='entropy`
+- `max_depth = 10`
+- `min_samples_split = 10`
+- `min_samples_leaf = 15`
 
-This improved accuracy from **81.2% to 83.4%**.
+This improved accuracy from **76.2% to 83.4%**.
 
 ---
 
-## 🤖 Final Model
-### Decision Tree Classifier (Tuned)
+##  Final Model
+### Decision Tree Classifier
 
 The tuned Decision Tree was selected as the final model due to its superior performance and interpretability.
 
 ---
 
-## 📈 Model Evaluation
+##  Model Evaluation
 
 Because the dataset is **imbalanced**, accuracy alone is insufficient.  
 Additional metrics were analyzed.
 
 ### Classification Report
 
-| Class | Precision | Recall | F1-Score | Support |
-|------|----------|--------|---------|--------|
-| No Default (0) | 0.84 | 0.95 | 0.89 | 4,660 |
-| Default (1) | 0.69 | 0.37 | 0.48 | 1,340 |
-| **Accuracy** |  |  | **0.82** | 6,000 |
-| **Macro Avg** | 0.76 | 0.66 | 0.69 | 6,000 |
-| **Weighted Avg** | 0.81 | 0.82 | 0.80 | 6,000 |
+| Class | Precision | Recall | F1-Score |
+|------|----------|--------|---------|
+| **No Default (0)** | 0.89 | 0.95 | 0.89 |
+| **Default (1)** | 0.71 | 0.75 | 0.48 |
+| **Accuracy** |  |  | **0.83** | 
 
 ---
 
-### Interpretation
-- Strong performance in identifying **non-defaulters** (95% recall).
-- Lower recall for **defaulters (37%)**, indicating missed high-risk customers.
-- In financial applications, reducing **false negatives** is critical.
-
----
-
-## 🧠 Key Insights
+##  Key Insights
 - Recent repayment behavior (`PAY_0`, `PAY_2`, `PAY_3`) is the strongest predictor of default.
 - Customers with recent payment delays have significantly higher default risk.
 - Credit limit and recent payment amounts also influence predictions.
 
----
-
-## 🔗 Project Links
-- 📊 **Dataset (Kaggle):**  
-  https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset
-
-- 📦 **Trained Model:**  
-  PASTE_YOUR_MODEL_LINK_HERE
 
 
