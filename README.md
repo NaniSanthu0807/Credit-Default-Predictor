@@ -6,7 +6,7 @@ This project builds a machine learning model to predict credit card default risk
 The dataset comes from the UCI Machine Learning Repository and contains real credit card client data from Taiwan.
 # Credit Card Default Prediction
 
-![Python](https://img.shields.io/badge/Python-3.9-blue)
+![Python](https://img.shields.io/badge/Python-3.13.3-blue)
 ![ML](https://img.shields.io/badge/Machine%20Learning-Classification-orange)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
