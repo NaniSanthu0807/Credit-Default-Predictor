@@ -46,7 +46,7 @@ The objective of this project is to build a machine learning model that predicts
   - Scikit-learn
   - Matplotlib
   - Seaborn
-  - 
+    
 
 ---
 
