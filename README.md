@@ -68,8 +68,8 @@ Multiple algorithms were implemented and compared.
 |------|--------------|
 | Naive Bayes | 80.0 |
 | K-Nearest Neighbors (KNN) | 79.44 |
-| Decision Tree (Before Tuning) | 76.2 |
-| **Decision Tree (After Tuning)** | **83.4** |
+| Decision Tree (Before Tuning) | 83.2 |
+| **Decision Tree (After Tuning)** | **91.4** |
 
 ---
 
@@ -82,7 +82,7 @@ Hyperparameter tuning was applied to improve generalization and reduce overfitti
 - `min_samples_split = 10`
 - `min_samples_leaf = 15`
 
-This improved accuracy from **76.2% to 83.4%**.
+This improved accuracy from **83.2% to 91.4%**.
 
 ---
 
@@ -103,8 +103,8 @@ Additional metrics were analyzed.
 | Class | Precision | Recall | F1-Score |
 |------|----------|--------|---------|
 | **No Default (0)** | 0.89 | 0.95 | 0.89 |
-| **Default (1)** | 0.71 | 0.75 | 0.69 |
-| **Accuracy** |  |  | **0.83** | 
+| **Default (1)** | 0.81 | 0.79 | 0.75 |
+| **Accuracy** |  |  | **0.91.4** | 
 
 ---
 
